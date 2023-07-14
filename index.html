@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JusOS - Justin's Personal Site</title>
+    <meta
+      name="description"
+      content="Welcome to Justin's personal website - Front-end Web Developer"
+    />
+    <meta name="robots" content="noodp,noydir" />
+    <meta
+      name="author"
+      content="Built by Justin Ong, Designed by Nev Flynn at nevflynn.com"
+    />
+
+    <link rel="icon" href="/img/moon-64x64.png" />
+    <link rel="apple-touch-icon" href="/img/moon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="JusOS - Justin's Personal Site" />
+    <meta
+      property="twitter:description"
+      content="Welcome to Justin's personal website - Front-end Web Developer"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://registe.me/" />
+    <meta property="og:title" content="JusOS - Justin's Portfolio " />
+    <meta
+      property="og:description"
+      content="Welcome to Justin's Portfolio website - Frontend Developer"
+    />
+    <!-- <meta
+      property="og:image"
+      content="https://personalsitestaticimage.s3.amazonaws.com/twitter-card.webp"
+    /> -->
+
+    <script
+      defer
+      data-domain=""
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"
+    ></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="toggle-container">
+        <div class="switch">
+          <div class="toggle">
+            <ion-icon class="toggle-icon sun" name="sunny"></ion-icon>
+            <ion-icon class="toggle-icon moon" name="moon"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <nav class="filters-primary">
+        <div class="filters-container-main">
+          <ul class="filters-list">
+            <li class="filter active" data-filter="all">All</li>
+            <li class="filter" data-filter="about">About</li>
+            <li class="filter" data-filter="projects">Projects</li>
+          </ul>
+        </div>
+      </nav>
+      <a class="nav-btn" href="mailto:justin-ong@live.com.au">
+        <span class="nav-cta">Contact</span>
+      </a>
+    </header>
+    <div class="container">
+      <main>
+        <div class="grid">
+          <!-- INTRODUCTION -->
+          <div class="card card--intro" id="card--intro--all">
+            <h1 class="intro-heading">Justin Ong</h1>
+            <h1 class="intro-subheading">Front-end Web Developer</h1>
+            <div
+              class="intro-text-content intro-text--active"
+              id="intro-text-all"
+            >
+              <p class="intro-text">
+                I am Justin Ong, a skilled frontend developer with a passion for
+                crafting visually stunning and user-friendly websites.
+              </p>
+            </div>
+            <div class="intro-text-content" id="intro-text-about">
+              <p class="intro-text intro-text--helper">
+                I am Justin Ong, a skilled frontend developer with a passion for
+                crafting visually stunning and user-friendly websites.
+              </p>
+              <p class="intro-text intro-text--helper">
+                I'm a 22 year old frontend software engineer based in Sydney,
+                Australia with a strong passion for developing websites with
+                purposeful user experiences. With expertise in HTML, CSS, and
+                JavaScript, I strive to create immersive digital experiences
+                that captivate users.
+              </p>
+              <p class="intro-text intro-text--helper">
+                I am dedicated to delivering high-quality code and continuously
+                improving my skills to stay at the forefront of web development.
+                I work on new projects that take my engineering skills to new
+                levels and find ways around problems in order to become a better
+                developer overtime. Currently, I am a freelance frontend
+                developer.
+              </p>
+            </div>
+            <div class="intro-btn-container">
+              <button class="intro-btn intro-btn-primary" id="btn-see-my-work">
+                <span class="intro-cta intro-cta-primary">See my work</span>
+              </button>
+              <button class="intro-btn intro-btn-secondary" id="btn-learn-more">
+                <span class="intro-cta intro-cta-secondary">Learn more</span>
+              </button>
+            </div>
+          </div>
+          <!-- MAP -->
+          <div class="card--map" id="card--map--all" tabindex="-1">
+            <div id="map" tabindex="-1">
+              <!-- <button class="zoom-btn zoom-btn--out">
+                <ion-icon
+                  class="button-icon button-zoom--out"
+                  name="remove-outline"
+                ></ion-icon>
+              </button>
+              <button class="zoom-btn zoom-btn--in">
+                <ion-icon
+                  class="button-icon button-zoom--in"
+                  name="add-outline"
+                ></ion-icon>
+              </button> -->
+            </div>
+          </div>
+          <!-- PHOTOS -->
+          <div class="card--photos" id="card--photos--all">
+            <div class="slider">
+              <img
+                class="photo slide slide--1"
+                src="img/memoji.PNG"
+                alt="Emoji"
+              />
+              <!-- <img
+                class="photo slide slide--2"
+                src="/img/me.jpg"
+                alt="Photograph "
+                loading="lazy"
+              /> -->
+              <!-- <img
+                class="photo slide slide--3"
+                src=""
+                alt="Photograph "
+                loading="lazy"
+              />
+              <img
+                class="photo slide slide--4"
+                src=""
+                alt="Photograph "
+                loading="lazy"
+              />
+              <img
+                class="photo slide slide--5"
+                src=""
+                alt="Photo"
+                loading="lazy"
+              /> -->
+            </div>
+
+            <button class="slider-btn slider-btn--left">
+              <ion-icon
+                class="button-icon button-icon--left"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <button class="slider-btn slider-btn--right">
+              <ion-icon
+                class="button-icon button-icon--right"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+            <div class="dots"></div>
+          </div>
+          <!-- RUNNING DASHBOARD -->
+          <div class="card card--running" id="card--running--all">
+            <!-- RECIPELY -->
+
+            <div class="project-name-container">
+              <p class="subheading">PROJECT</p>
+              <h2 class="heading-secondary heading-secondary-helper">
+                Twitter Web App
+              </h2>
+            </div>
+            <div class="project-builtwith-container">
+              <p class="subheading project--helper">BUILT WITH</p>
+              <div class="project-logo-cluster">
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                    alt="React Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                    alt="HTML Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                    alt="CSS Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+                    alt="Firebase Logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="project-preview-container center">
+              <img
+                class="project-preview-image"
+                src="./img/twitterclone.jpg"
+                alt="Project Twitter"
+              />
+            </div>
+            <div class="project-btn-container">
+              <a
+                class="project-btn primary-project-btn"
+                href="https://twitter-clone-one-mauve.vercel.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta primary-project-cta"
+                  >View project</span
+                >
+              </a>
+              <a
+                class="project-btn secondary-project-btn"
+                href="https://github.com/JustinOngy/twitter-clone"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta secondary-project-cta">GitHub</span>
+              </a>
+            </div>
+          </div>
+          <!-- Tech Stack -->
+          <div class="card card--learning" id="card--learning--all">
+            <h2
+              class="heading-secondary heading-secondary-mobile heading-secondary--less-margin"
+            >
+              Tech Stack
+            </h2>
+            <div class="learning-container-mobile">
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- LOGO -->
+                  <div class="logo-container logo-helper logo-helper--margin">
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                      alt="HTML Logo"
+                    />
+                  </div>
+                  <!-- TEXT -->
+                  <div class="learning-text-container">
+                    <h1>HTML</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- LOGO -->
+                  <div class="logo-container logo-helper logo-helper--margin">
+                    <img
+                      class="logo-vector"
+                      src="https://cdn.worldvectorlogo.com/logos/css-3.svg"
+                      alt="CSS Logo"
+                    />
+                  </div>
+                  <!-- TEXT -->
+                  <div class="learning-text-container">
+                    <h1>CSS +</h1>
+                    <br />
+                    <h1>Tailwind</h1>
+                  </div>
+                  <img
+                    class="logo-vector"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png"
+                    alt="CSS Logo"
+                  />
+                </div>
+              </div>
+
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- LOGO -->
+                  <div class="logo-container logo-helper">
+                    <img
+                      class="logo-vector"
+                      src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
+                      alt="JavaScript Logo"
+                    />
+                  </div>
+                  <!--  TEXT -->
+                  <div class="learning-text-container">
+                    <h1>JavaScript</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- LOGO -->
+                  <div class="logo-container logo-helper">
+                    <img
+                      class="logo-vector"
+                      src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+                      alt="JavaScript Logo"
+                    />
+                  </div>
+                  <!--  TEXT -->
+                  <div class="learning-text-container">
+                    <h1>React</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- LOGO -->
+                  <div class="logo-container logo-helper">
+                    <img
+                      class="logo-vector"
+                      src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
+                      alt="JavaScript Logo"
+                    />
+                  </div>
+                  <!--  TEXT -->
+                  <div class="learning-text-container">
+                    <h1>Next.js</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- LOGO -->
+                  <div class="logo-container logo-helper">
+                    <img
+                      class="logo-vector"
+                      src="https://cdn.worldvectorlogo.com/logos/typescript.svg"
+                      alt="JavaScript Logo"
+                    />
+                  </div>
+                  <!--  TEXT -->
+                  <div class="learning-text-container">
+                    <h1>TypeScript</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="learning-container">
+                <div class="learning-header">
+                  <!-- LOGO -->
+                  <div class="logo-container logo-helper">
+                    <img
+                      class="logo-vector"
+                      src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg"
+                      alt="JavaScript Logo"
+                    />
+                  </div>
+                  <!--  TEXT -->
+                  <div class="learning-text-container">
+                    <h1>Firebase</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SPOTIFY -->
+          <div class="card card--spotify" id="card--spotify--all">
+            <div class="song-artwork">
+              <a
+                id="spotify-preview"
+                href="https://genius.com/Swedish-house-mafia-and-the-weeknd-moth-to-a-flame-lyrics"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  id="spotify-artwork"
+                  src="/img/weekend.jpeg"
+                  alt="artwork for most recently played song"
+                />
+              </a>
+            </div>
+            <img
+              class="spotify-logo"
+              src="img/spotify-logo.svg"
+              alt="The Spotify logo"
+            />
+            <div class="spotify-information">
+              <div class="playing-status-container">
+                <div class="animation-container">
+                  <div class="spotify-animation-1"></div>
+                  <div class="spotify-animation-2"></div>
+                  <div class="spotify-animation-3"></div>
+                </div>
+                <div class="playing-status">
+                  <p class="current-status">Last Played</p>
+                </div>
+              </div>
+              <div class="now-playing">
+                <a id="spotify-song" href="" target="_blank" rel="noopener"></a>
+              </div>
+              <div class="song-artist">
+                <p id="spotify-artist"></p>
+              </div>
+            </div>
+          </div>
+          <!-- RUNNING ROTATION -->
+          <div class="card card--rotation flex" id="card--rotation--all">
+            <div class="flex-col">
+              <div class="project-name-container">
+                <p class="subheading">PROJECT</p>
+                <h2 class="heading-secondary heading-secondary-helper">
+                  CarHiretz
+                </h2>
+              </div>
+              <div class="project-builtwith-container">
+                <p class="subheading project--helper">BUILT WITH</p>
+                <div class="project-logo-cluster">
+                  <div>
+                    <img
+                      class="logo-vector"
+                      src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg"
+                      alt="JavaScript Logo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                      alt="HTML Logo"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      class="logo-vector"
+                      src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                      alt="CSS Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="project-preview-container center leftpad">
+                <img
+                  class="project-preview-image"
+                  src="./img/carhiretz.jpg"
+                  alt="Project preview image for CareHiretz"
+                />
+              </div>
+              <div class="project-btn-container leftpad">
+                <a
+                  class="project-btn primary-project-btn"
+                  href="https://carhiretz.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="project-cta primary-project-cta"
+                    >View project</span
+                  >
+                </a>
+                <a
+                  class="project-btn secondary-project-btn"
+                  href="https://github.com/JustinOngy/car-hire"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="project-cta secondary-project-cta">GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- GITHUB -->
+          <div class="card card--github card--center" id="card--github--all">
+            <a
+              class="social-media-container"
+              href="https://github.com/JustinOngy"
+              aria-label="Justin's github"
+              target="_blank"
+              rel="noopener"
+            ></a>
+            <ion-icon class="social-media-logo" name="logo-github"></ion-icon>
+            <a
+              class="social-media-btn"
+              href="https://github.com/JustinOngy"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- TWITTER -->
+          <div class="card card--twitter card--center" id="card--twitter--all">
+            <a
+              class="social-media-container"
+              href=""
+              aria-label="Justin's twitter"
+              rel="noopener"
+            ></a>
+            <ion-icon class="social-media-logo" name="logo-twitter"></ion-icon>
+            <a class="social-media-btn" href="" rel="noopener">
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- YOUTUBE -->
+          <div class="card card--youtube card--center" id="card--youtube--all">
+            <a
+              class="social-media-container"
+              href="https://www.youtube.com/@JustCodeIn/about"
+              aria-label="Justin's Youtube"
+              target="_blank"
+              rel="noopener"
+            ></a>
+            <ion-icon class="social-media-logo" name="logo-youtube"></ion-icon>
+            <a
+              class="social-media-btn"
+              href="https://www.youtube.com/@JustCodeIn/about"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- LINKEDIN -->
+          <div
+            class="card card--linkedin card--center"
+            id="card--linkedin--all"
+          >
+            <a
+              class="social-media-container"
+              href="https://www.linkedin.com/in/-justinong"
+              aria-label="Justin's linkedin"
+              target="_blank"
+              rel="noopener"
+            ></a>
+            <ion-icon class="social-media-logo" name="logo-linkedin"></ion-icon>
+            <a
+              class="social-media-btn"
+              href="https://www.linkedin.com/in/-justinong"
+              target="_blank"
+              rel="noopener"
+            >
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- INSTAGRAM -->
+          <div
+            class="card card--instagram card--center"
+            id="card--instagram--all"
+          >
+            <a
+              class="social-media-container"
+              href="/"
+              aria-label="Justin's instagram"
+              rel="noopener"
+            ></a>
+            <ion-icon
+              class="social-media-logo"
+              name="logo-instagram"
+            ></ion-icon>
+            <a class="social-media-btn" href="/" rel="noopener">
+              <ion-icon
+                class="social-media-arrow"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+          </div>
+          <!-- Spotify Project -->
+          <div
+            class="card card--ryos card--project-mobile"
+            id="card--ryos--all"
+          >
+            <div class="project-name-container">
+              <p class="subheading">PROJECT</p>
+              <h2 class="heading-secondary heading-secondary-helper">
+                Music Player: Spotify Clone
+              </h2>
+            </div>
+            <div class="project-builtwith-container">
+              <p class="subheading project--helper">BUILT WITH</p>
+              <div class="project-logo-cluster">
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
+                    alt="Next Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://cdn.worldvectorlogo.com/logos/react-2.svg
+                    "
+                    alt="React Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png"
+                    alt="CSS Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png"
+                    alt="Supabase Logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="project-preview-container">
+              <img
+                class="project-preview-image"
+                src="./img/spotifypic.jpg"
+                alt="Project preview image for spotify clone"
+              />
+            </div>
+            <div class="project-btn-container">
+              <a
+                class="project-btn primary-project-btn"
+                href="https://spotify-app-murex.vercel.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta primary-project-cta"
+                  >View project</span
+                >
+              </a>
+              <a
+                class="project-btn secondary-project-btn"
+                href="https://github.com/JustinOngy/spotify-app"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta secondary-project-cta">GitHub</span>
+              </a>
+            </div>
+          </div>
+          <!-- RECIPELY -->
+          <div
+            class="card card--recipely card--project-mobile"
+            id="card--recipely--all"
+          >
+            <div class="project-name-container">
+              <p class="subheading">PROJECT</p>
+              <h2 class="heading-secondary heading-secondary-helper">
+                NFT Marketplace
+              </h2>
+            </div>
+            <div class="project-builtwith-container">
+              <p class="subheading project--helper">BUILT WITH</p>
+              <div class="project-logo-cluster">
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                    alt="React Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                    alt="HTML Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                    alt="CSS Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+                    alt="Firebase Logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="project-preview-container center">
+              <img
+                class="project-preview-image"
+                src="./img/nftmarket.png"
+                alt="Project preview image for NFTMarketplace"
+              />
+            </div>
+            <div class="project-btn-container">
+              <a
+                class="project-btn primary-project-btn"
+                href="https://justin-marketplace-internship.vercel.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta primary-project-cta"
+                  >View project</span
+                >
+              </a>
+              <a
+                class="project-btn secondary-project-btn"
+                href="https://github.com/JustinOngy/justin-marketplace-internship"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta secondary-project-cta">GitHub</span>
+              </a>
+            </div>
+          </div>
+          <!-- DONATE -->
+          <div class="card card--donate" id="card--donate--all">
+            <!-- RUNNING DASHBOARD -->
+            <!-- RECIPELY -->
+
+            <div class="project-name-container">
+              <p class="subheading">PROJECT</p>
+              <h2 class="heading-secondary heading-secondary-helper">GPT-3</h2>
+            </div>
+            <div class="project-builtwith-container">
+              <p class="subheading project--helper">BUILT WITH</p>
+              <div class="project-logo-cluster">
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+                    alt="React Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+                    alt="HTML Logo"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="logo-vector"
+                    src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+                    alt="CSS Logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="project-preview-container"></div>
+            <div class="project-btn-container">
+              <a
+                class="project-btn primary-project-btn"
+                href="https://gpt-3-ebon.vercel.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta primary-project-cta"
+                  >View project</span
+                >
+              </a>
+              <a
+                class="project-btn secondary-project-btn"
+                href="https://github.com/JustinOngy/gpt-3"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="project-cta secondary-project-cta">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
